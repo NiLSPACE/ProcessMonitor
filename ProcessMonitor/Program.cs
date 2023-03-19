@@ -18,7 +18,7 @@ namespace ProcessMonitor
 		/// <param name="text"></param>
 		static void Log(string text)
 		{
-			var timestamp = DateTime.Now.AddHours(-16).ToString("HH:mm");
+			var timestamp = DateTime.Now.ToString("HH:mm");
 			Console.WriteLine($"[{timestamp}]: {text}");
 		}
 
